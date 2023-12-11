@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Tweetster</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" tools:keep="@string/hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Privacy -->
+    <string-array name="privacy">
+        <item>Everyone</item>
+        <item>Followers</item>
+        <item>No one</item>
+    </string-array>
+
+    <string-array name="string_array_resolutions">
+        <item>320x240</item>
+        <item>480x360</item>
+        <item>640x360</item>
+        <item>640x480</item>
+        <item>960x540</item>
+        <item>1280x720</item>
+    </string-array>
+
+    <string name="native_ad_unit_id">ca-app-pub-8957916229862289/1701918113</string>  <!-- Paste Native Ad unit id here for admob -->
+    <string name="banner_ad_unit_id">ca-app-pub-8957916229862289/6954244791</string>  <!-- Paste Banner Ad unit id here for admob -->
+
+    <string name="about">Tweetster is an microblogging and social networking service on which users post and interact with messages known as "tweets". Registered users can post, like and retweet tweets, but unregistered users can only read them. Users access Tweetster through its mobile-device application software ("app"). Tweetster were originally restricted to unlimited characters.
+
+Tweetster was created by Spacester, in February 2021. Tweetster is a some-to-many microblogging service, given that the vast majority of tweets are written by a small minority of users.</string>
+
+</resources>

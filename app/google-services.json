@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "380436995369",
+    "firebase_url": "https://tweetster-22129.firebaseio.com",
+    "project_id": "tweetster-22129",
+    "storage_bucket": "tweetster-22129.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380436995369:android:34c4bd4fc9e489b7116b38",
+        "android_client_info": {
+          "package_name": "com.spacester.tweetster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380436995369-akstq6956qrah664dgq3o1e7b7ms6cfd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spacester.tweetster",
+            "certificate_hash": "cbe60fd2413f2d50ba379f725681291fc43baaa6"
+          }
+        },
+        {
+          "client_id": "380436995369-3e9tchrf8292ifh5dforbnoutdk6nrsd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7fEgt-wcl-bwKNVztbRjipz3VKtYjleo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380436995369-3e9tchrf8292ifh5dforbnoutdk6nrsd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

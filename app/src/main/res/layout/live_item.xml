@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="65dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginStart="14dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="65dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/story_photo">
+        <com.joooonho.SelectableRoundedImageView
+            app:sriv_left_top_corner_radius="12dip"
+            app:sriv_right_top_corner_radius="12dip"
+            app:sriv_left_bottom_corner_radius="12dip"
+            app:sriv_right_bottom_corner_radius="12dip"
+            app:sriv_oval="false"
+            android:layout_width="65dp"
+            android:layout_centerInParent="false"
+            android:layout_height="80dp"
+            android:id="@+id/live_photo" />
+
+        <TextView
+            android:background="@drawable/live_gradient"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Live"
+            android:layout_margin="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textSize="10sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,SmallSp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/story_username"
+        android:maxLines="1"
+        tools:ignore="HardcodedText,SpUsage"
+        android:textSize="15dp"
+        android:textColor="#35383B"
+        android:fontFamily="sans-serif-black"
+        android:text="Username"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

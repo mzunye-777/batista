@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.spacester.tweetster">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:name=".live.AgoraApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+        <activity android:name=".activity.CommentRetweetedByActivity"/>
+        <activity android:name=".activity.CommentLikedByActivity"/>
+        <activity android:name=".activity.StoryChatViewActivity"/>
+        <activity android:name=".activity.AboutActivity" />
+        <activity
+            android:name=".live.activities.LiveActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.Policy"/>
+        <activity android:name=".activity.Terms"/>
+        <activity android:name=".live.activities.AudienceActivity" />
+        <activity android:name=".live.activities.GoAudienceActivity" />
+        <activity android:name=".live.activities.GoBroadcastActivity" />
+        <activity android:name=".live.activities.BroadcasterActivity" />
+        <activity android:name=".activity.ViewedActivity" />
+        <activity android:name=".activity.AddActivity" />
+        <activity android:name=".activity.StoryViewActivity" />
+        <activity android:name=".admin.PendingVerificationActivity" />
+        <activity android:name=".activity.VerifyActivity" />
+        <activity android:name=".BanActivity" />
+        <activity android:name=".admin.PostListActivity" />
+        <activity android:name=".admin.PostReportListActivity" />
+        <activity android:name=".admin.UserReportListActivity" />
+        <activity android:name=".admin.UserListActivity" />
+        <activity android:name=".admin.AdminActivity" />
+        <activity android:name=".activity.MediaActivity" />
+        <activity android:name=".activity.EditPostActivity" />
+        <activity android:name=".activity.EditPasswordActivity" />
+        <activity android:name=".activity.EditEmailActivity" />
+        <activity android:name=".activity.SavedPostActivity" />
+        <activity android:name=".activity.RetweetedByActivity" />
+        <activity android:name=".activity.FollowersActivity" />
+        <activity android:name=".activity.FollowingActivity" />
+        <activity android:name=".activity.LikedByActivity" />
+        <activity android:name=".activity.SettingsActivity" />
+        <activity android:name=".activity.SearchPostActivity" />
+        <activity android:name=".activity.ChatActivity" />
+        <activity android:name=".activity.CreateChatActivity" />
+        <activity android:name=".activity.CommentActivity" />
+        <activity android:name=".activity.UserProfileActivity" />
+        <activity android:name=".activity.EditProfileActivity" />
+        <activity android:name=".emailAuth.ForgotPasswordActivity" />
+        <activity android:name=".CheckActivity" />
+        <activity android:name=".activity.CreatePostActivity" />
+        <activity android:name=".activity.MyProfileActivity" />
+        <activity android:name=".phoneAuth.PhoneSignUpActivity" />
+        <activity android:name=".phoneAuth.VerifyOTPActivity" />
+        <activity android:name=".phoneAuth.GenerateOTPActivity" />
+        <activity android:name=".emailAuth.SignUpActivity" />
+        <activity android:name=".emailAuth.PasswordActivity" />
+        <activity android:name=".emailAuth.EmailActivity" />
+        <activity android:name=".welcome.WelcomeActivity" />
+        <activity android:name=".welcome.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <service
+            android:name=".notifications.FirebaseMessaging"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8957916229862289~8996479428"/>
+    </application>
+
+</manifest>

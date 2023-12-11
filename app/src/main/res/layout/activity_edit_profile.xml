@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".activity.EditProfileActivity"
+    tools:ignore="Overdraw">
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:src="@drawable/cover"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:theme="@style/AppTheme.WhiteAccent"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:indeterminateOnly="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:id="@+id/back"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/avatar"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_user"
+                android:layout_gravity="center_vertical"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:tint="#657786"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <EditText
+                android:hint="Name"
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-black"
+                android:layout_gravity="center_vertical"
+                android:textSize="22sp"
+                android:layout_marginStart="10dp"
+                android:textColor="#35383B"
+                android:background="@null"
+                android:textColorHint="#657786"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,TextFields"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_smile"
+                android:layout_gravity="center_vertical"
+                android:layout_width="28dp"
+                app:tint="#657786"
+                android:layout_height="28dp"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <EditText
+                android:hint="Username"
+                android:fontFamily="sans-serif-black"
+                android:id="@+id/username"
+                android:layout_gravity="center_vertical"
+                android:textSize="22sp"
+                android:layout_marginStart="10dp"
+                android:textColor="#35383B"
+                android:background="@null"
+                android:textColorHint="#657786"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,TextFields"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_info"
+                android:layout_gravity="center_vertical"
+                android:layout_width="28dp"
+                app:tint="#657786"
+                android:layout_height="28dp"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <EditText
+                android:hint="Bio"
+                android:fontFamily="sans-serif-black"
+                android:layout_gravity="center_vertical"
+                android:textSize="22sp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/bio"
+                android:textColor="#35383B"
+                android:background="@null"
+                android:textColorHint="#657786"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,TextFields"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_map_pin"
+                android:layout_gravity="center_vertical"
+                app:tint="#657786"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <EditText
+                android:hint="Location"
+                android:fontFamily="sans-serif-black"
+                android:layout_gravity="center_vertical"
+                android:textSize="22sp"
+                android:id="@+id/location"
+                android:layout_marginStart="10dp"
+                android:textColor="#35383B"
+                android:background="@null"
+                android:textColorHint="#657786"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,TextFields"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_link_2"
+                app:tint="#657786"
+                android:layout_gravity="center_vertical"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <EditText
+                android:hint="Link"
+                android:id="@+id/link"
+                android:fontFamily="sans-serif-black"
+                android:layout_gravity="center_vertical"
+                android:textSize="22sp"
+                android:layout_marginStart="10dp"
+                android:textColor="#35383B"
+                android:background="@null"
+                android:textColorHint="#657786"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,TextFields"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:stateListAnimator="@null"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/save"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/post_btn_round"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="sans-serif-black"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
